@@ -27,7 +27,7 @@ function create(){
     alert("Please enter a valid number")
     return
   }
-  if(8<length&&length<12){
+  if(8<=length&&length<=12){
     firstPassword=createPassword(length)
     secondPassword=createPassword(length)
     secondBox.textContent=firstPassword
