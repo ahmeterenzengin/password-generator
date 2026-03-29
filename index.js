@@ -27,9 +27,15 @@ function create(){
     alert("Please enter a valid number")
     return
   }
-firstPassword=createPassword(length)
-secondPassword=createPassword(length)
-secondBox.textContent=firstPassword
-firstBox.textContent=secondPassword
+  if(8<length&&length<12){
+    firstPassword=createPassword(length)
+    secondPassword=createPassword(length)
+    secondBox.textContent=firstPassword
+    firstBox.textContent=secondPassword
+  }else{
+    alert("Please enter a number beetween 8 and 12")
+    return
+  }
+
 }
 
